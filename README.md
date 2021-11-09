@@ -1,6 +1,6 @@
 ## CHANGE SESSION
 
-[`Ganti Session`](https://github.com/XrutzMalesin/XrutzB0t/blob/master/session.json#L1)
+[`Ganti Session`](https://github.com/XrutzMalesin/DeployBot/blob/master/session.json#L1)
 
 ## BUILDPACK HEROKU
 
