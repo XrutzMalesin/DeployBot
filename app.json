@@ -1,0 +1,53 @@
+{
+  "name": "Xrutz Selfbot",
+  "description": "[Xrutz-bot] Thank you for using this script",
+  "logo": "https://a.uguu.se/GrttsiUy.jpg",
+  "keywords": ["termux-whatsapp-bot",
+    "whatsapp-bot",
+    "whatsapp",
+    "js-whatsapp"],
+  "repository": "https://github.com/XrutzMalesin",
+  "website": "http://bit.ly/Grupgabutbotv1",
+  "env": {
+    "IWasHuman": {
+      "description": "Get the API key here https://api.lolhuman.xyz",
+      "required": true
+    },
+    "CpGSLymOQy9KfTKgQZr9eDSYqqR": {
+      "description": "Get the API key here https://api.zeks.xyz",
+      "required": true
+    },
+    "Xrutz Bot": {
+      "description": "Enter Your Bot Name",
+      "required": false
+    },
+    "6283871990243": {
+      "description": "your whatsapp number",
+      "required": true
+    },
+    "62838719902435": {
+      "description": "your whatsapp bot number",
+      "required": false
+    }
+},
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
